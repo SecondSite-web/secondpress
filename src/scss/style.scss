@@ -1,0 +1,26 @@
+/*!
+----------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Font Awesome
+# Bootstrap
+# Wordpress Styles
+# Custom Styles
+--------------------------------------------------------------*/
+
+@import "_theme/variables.scss"; // Start customizing a theme in this file
+@import "_bootstrap/bootstrap.scss"; // The bootstrap core sass
+@import "_wordpress/wordpress"; // Basic Wordpress Bootstrap styling and plugin compatibility stuff
+
+// Bootswatch Theme's are available in the /vendor folder. Use variables.scss file with this one
+// @import "../../vendor/bootswatch/cerulean/_bootswatch.scss";
+
+// https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+@import "_fontawesome/fontawesome.scss";
+@import "_fontawesome/regular.scss";
+@import "_fontawesome/brands.scss";
+@import "_fontawesome/solid.scss";
+@import "_fontawesome/v4-shims.scss";
+
+// Your Awesome Theme styles go in this folder
+@import "_theme/controller";

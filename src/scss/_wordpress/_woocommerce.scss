@@ -1,0 +1,41 @@
+.woocommerce {
+  label,
+  .woocommerce-input-wrapper
+  {
+    width:100%;
+  }
+
+  // add form control css to woocommerce form fields
+  .select2,
+  textarea {
+    @extend .form-control;
+  }
+  // woocommerce override
+  .select2-container--default .select2-selection--single {
+    border: none;
+  }
+  // input field - select - adjust down arrow icon position
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 5px;
+    right: 1px;
+    width: 39px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  // Input fields - after select - dismiss icon position
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    display: block;
+    padding-left: 8px;
+    padding-right: 20px;
+    position: absolute;
+    background: #fff;
+    z-index: 9000;
+    width: 97%;
+  }
+  .password-input {
+    width:100%
+  }
+}
+
